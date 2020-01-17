@@ -7,10 +7,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Monarch Robotics',
       theme: ThemeData(
         primaryColor: Color.fromRGBO(255, 210, 0, 1.0),
-//        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
       ),
       home: HomePage(),
     );
@@ -29,8 +30,20 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Monarch Robotics"),
       ),
-      body: Container(
-
+      body: ListView(
+        children: <Widget>[
+          Text(
+              "1245",
+            style: TextStyle(
+              fontSize: 25.0,
+            ),
+          ),
+          Image(
+            image: AssetImage(
+              "assets/Final Logo.png"
+            ),
+          )
+        ],
       ),
     );
   }
