@@ -27,8 +27,51 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Monarch Robotics"),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Image.asset(name),
+            )
+          ],
+        ),
+      ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(70),
+        child: AppBar(
+          leading: MediaQuery.of(context).size.width>800 ? null : IconButton(
+            icon: Icon(Icons.menu,color: Colors.white,),
+            onPressed: (){},
+          ),
+          backgroundColor: Colors.black,
+          brightness: Brightness.dark,
+          centerTitle: true,
+          title: Image.asset(
+              "assets/textOnly.png",
+            height: 50,
+          ),
+          actions: MediaQuery.of(context).size.width>800 ? <Widget>[
+            FlatButton(
+              child: Text("Contact"),
+              onPressed: (){},
+            ),
+            FlatButton(
+              child: Text("Photos"),
+              onPressed: (){},
+            ),
+            FlatButton(
+              child: Text("About Us"),
+              onPressed: (){},
+            ),
+          ] : null,
+//        actions: <Widget>[
+//          FlatButton(
+//            child: Text("Contact"),
+//            onPressed: (){},
+//          )
+//        ],
+        ),
       ),
       body: ListView(
         children: <Widget>[
@@ -40,9 +83,9 @@ class _HomePageState extends State<HomePage> {
           ),
           Image(
             image: AssetImage(
-              "assets/Final Logo.png"
+                "assets/Final Logo.png"
             ),
-          )
+          ),
         ],
       ),
     );
