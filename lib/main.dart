@@ -117,23 +117,18 @@ class _HomePageState extends State<HomePage> {
             height: 100,
           ),
           Text(
-            "	Dysplasia is the abnormal development or growth of cells and can be detected through visual inspection of tissue "
-                "samples (see Fig. 1). Biopsies can be given a histology score on a 1-8 scale with 1-2 being normal non-dysplasia, "
-                "3-4 being low grade dysplasia (LGD), 5-7 being high grade dysplasia (HGD), and 8 being invasive squamous cell "
-                "carcinoma (SCC) [4]. Also of significance is the categorization of biopsies based on how they change over time. "
-                "If a site is initially identified as having dysplasia and remains at the same level of dysplasia, "
-                "it is considered persistent. If a site is identified as dysplastic and regresses to non-dysplasia, it is considered "
-                "regressive. Finally, if a site is identified as non-dysplastic and progresses to dysplasia, it is considered "
-                "progressive. The persistence or progression of HGD in BECs has been shown by Merrick et al. to significantly "
-                "increase the risk of developing invasive SCC [4]. In a second study, the same group compared the gene expression of "
-                "persistent and progressive sites of bronchial dysplasia to regressive sites and found that there were 395 differentially "
-                "expressed genes between the two groups, many of which are associated with cell-cycle control, inflammation, and cell "
-                "adhesion [3]. Of particular note was polo-like kinase 1 (PLK1), which is heavily involved in cell-cycle regulation. "
-                "PLK1 inhibitor treatment of BECs exhibiting persistent dysplasia resulted in apoptosis and decreased proliferation, "
-                "whereas no such effect was seen in normal or regressive dysplastic cells [3]. A study into oral SCC also found that "
-                "PLK1 was significant: Goan et al. found that PLK1 was significantly expressed in tumor tissues and heavily involved "
-                "in the proliferation of cancerous cells [6]. Given this information, looking for expression profiles similar to PLK1 "
-                "may be a good place to start.",
+            "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds."
+                " Line up at the start. The running speed starts slowly but gets faster each minute after you hear this signal bodeboop. A sing lap should be completed every time you hear"
+                " this sound. ding Remember to run in a straight line and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. "
+                "The test will begin on the word start. On your mark. Get ready \nSTART \n \n"
+                "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds."
+                " Line up at the start. The running speed starts slowly but gets faster each minute after you hear this signal bodeboop. A sing lap should be completed every time you hear"
+                " this sound. ding Remember to run in a straight line and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. "
+                "The test will begin on the word start. On your mark. Get ready \nSTART \n \n"
+                "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds."
+                " Line up at the start. The running speed starts slowly but gets faster each minute after you hear this signal bodeboop. A sing lap should be completed every time you hear"
+                " this sound. ding Remember to run in a straight line and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. "
+                "The test will begin on the word start. On your mark. Get ready \nSTART \n \n",
             style: TextStyle(
               fontSize: 24.0,
             )
