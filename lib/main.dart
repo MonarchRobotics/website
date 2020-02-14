@@ -117,18 +117,8 @@ class _HomePageState extends State<HomePage> {
             height: 100,
           ),
           Text(
-            "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds."
-                " Line up at the start. The running speed starts slowly but gets faster each minute after you hear this signal bodeboop. A sing lap should be completed every time you hear"
-                " this sound. ding Remember to run in a straight line and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. "
-                "The test will begin on the word start. On your mark. Get ready \nSTART \n \n"
-                "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds."
-                " Line up at the start. The running speed starts slowly but gets faster each minute after you hear this signal bodeboop. A sing lap should be completed every time you hear"
-                " this sound. ding Remember to run in a straight line and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. "
-                "The test will begin on the word start. On your mark. Get ready \nSTART \n \n"
-                "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds."
-                " Line up at the start. The running speed starts slowly but gets faster each minute after you hear this signal bodeboop. A sing lap should be completed every time you hear"
-                " this sound. ding Remember to run in a straight line and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. "
-                "The test will begin on the word start. On your mark. Get ready \nSTART \n \n",
+            "We are Monarch Robotics of Monarch High School in Louisville, Colorado (Monak Ra&Hik). We are a small team with a cumulative total of 4 brain cells. Do we know what we are doing? Sort of."
+            "When in doubt, our philosophy is to not to blame mechanical, or electrical, or even programming. Our rule is to always blame Atharv without any further questions.",
             style: TextStyle(
               fontSize: 24.0,
             )
