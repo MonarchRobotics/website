@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:monarch_robotics_website/about_us.dart';
+import 'package:monarch_robotics_website/contact.dart';
+import 'package:monarch_robotics_website/photos.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +19,14 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.black,
         brightness: Brightness.dark,
       ),
-      home: HomePage(),
+      initialRoute: "/",
+      routes: {
+        "/": (context)=> HomePage(),
+        "/about": (context) => AboutUsPage(),
+        "/contact": (context) => ContactPage(),
+        "/photos": (context) => PhotosPage(),
+      },
+//      home: HomePage(),
     );
   }
 }
@@ -40,47 +50,60 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               leading: Icon(Icons.info),
               title: Text("About Us"),
+              onTap: (){
+                Navigator.pushReplacementNamed(context, "/about");
+              },
             ),
             ListTile(
               leading: Icon(Icons.email),
               title: Text("Contact"),
+              onTap: (){
+                Navigator.pushReplacementNamed(context, "/contact");
+              },
             ),
             ListTile(
               leading: Icon(Icons.photo),
               title: Text("Photos"),
+              onTap: (){
+                Navigator.pushReplacementNamed(context, "/photos");
+              },
             ),
           ],
         ),
       ),
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70),
-        child: AppBar(
-//          leading: MediaQuery.of(context).size.width>800 ? null : IconButton(
-//            icon: Icon(Icons.menu,color: Colors.white,),
-//            onPressed: (){},
-//          ),
-          backgroundColor: Colors.black,
-          brightness: Brightness.dark,
-          centerTitle: true,
-          title: Image.asset(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        brightness: Brightness.dark,
+        centerTitle: true,
+        title: InkWell(
+          onTap: (){
+//            Navigator.pushReplacementNamed(context, routeName)(context, "/");
+          },
+          child: Image.asset(
               "assets/textOnly.png",
             height: 50,
           ),
-          actions: MediaQuery.of(context).size.width>800 ? <Widget>[
-            FlatButton(
-              child: Text("About Us"),
-              onPressed: (){},
-            ),
-            FlatButton(
-              child: Text("Contact"),
-              onPressed: (){},
-            ),
-            FlatButton(
-              child: Text("Photos"),
-              onPressed: (){},
-            ),
-          ] : null,
         ),
+        actions: MediaQuery.of(context).size.width>800 ? <Widget>[
+          FlatButton(
+            child: Text("About Us"),
+            onPressed: (){
+              Navigator.pushReplacementNamed(context, "/about");
+            },
+          ),
+          FlatButton(
+            child: Text("Contact"),
+            onPressed: (){
+              Navigator.pushReplacementNamed(context, "/contact");
+            },
+          ),
+          FlatButton(
+            child: Text("Photos"),
+            onPressed: (){
+              Navigator.pushReplacementNamed(context, "/photos");
+              },
+          ),
+        ] : null,
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.transparent,
