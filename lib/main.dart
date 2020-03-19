@@ -76,9 +76,7 @@ class _HomePageState extends State<HomePage> {
         brightness: Brightness.dark,
         centerTitle: true,
         title: InkWell(
-          onTap: (){
-//            Navigator.pushReplacementNamed(context, routeName)(context, "/");
-          },
+          onTap: (){},
           child: Image.asset(
               "assets/textOnly.png",
             height: 50,

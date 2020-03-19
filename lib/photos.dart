@@ -67,8 +67,7 @@ class _PhotosPageState extends State<PhotosPage> {
           ),
           FlatButton(
             child: Text("Photos"),
-            onPressed: (){
-            },
+            onPressed: (){},
           ),
         ] : null,
       ),
